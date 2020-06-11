@@ -1,0 +1,42 @@
+<title>Tip Calculator</title>
+
+<link rel="stylesheet" href="purple.css">
+
+<div id="container" class="spare">
+  <h1>TIP CALCULATOR</h1>
+  <div id="calculator">
+
+<div class="space">
+    <form>
+      <p>How much was your bill?
+        <p>
+          $ <input id="billamt" type="text" placeholder="Bill Amount">
+
+          <p>How was your service?
+            <p>
+        <select id="serviceQual">
+            <option disabled selected value="0">-- Choose an Option --</option>
+            <option value="0.3">30% - Outstanding</option>
+            <option value="0.2">20% - Good</option>
+            <option value="0.15">15% - It was OK</option>
+            <option value="0.1">10% - Bad</option>
+            <option value="0.05">5% - Terrible</option>
+        </select>
+
+    </form>
+    <p>How many people are sharing the bill?</p>
+    <input id="peopleamt" type="text" placeholder="Number of People"> people
+    <button type="button" id="calculate">Calculate!</button>
+  </div>
+  </div>
+  <!--calculator end-->
+  <div id="totalTip">
+    <sup>$</sup><span id="tip">0.00</span>
+    <small id="each">each</small>
+  </div>
+  <!--totalTip end-->
+
+</div>
+<!--container end-->
+
+<script type="text/javascript" src="tip.js"></script>
